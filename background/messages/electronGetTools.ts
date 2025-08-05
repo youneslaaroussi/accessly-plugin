@@ -11,7 +11,7 @@ const handler: PlasmoMessaging.MessageHandler = async (req, res) => {
     // Also provide a simple list of available tool names
     const availableToolNames = [
       'capturePage', 'captureHTML', 'highlight', 'clickAt', 'scrollPage', 'scrollBy', 'scrollTo', 
-      'scrollIntoView', 'goTo', 'back', 'forward', 'reload', 'closeTab', 'listen', 'waitForSelector',
+      'scrollIntoView', 'goTo', 'back', 'forward', 'reload', 'closeTab', 'getTabs', 'listen', 'waitForSelector',
       'storeFact', 'getFact', 'getAllFacts', 'deleteFact'
     ]
     
@@ -19,7 +19,7 @@ const handler: PlasmoMessaging.MessageHandler = async (req, res) => {
     const toolCategories = {
       visual: ['capturePage', 'captureHTML', 'highlight'],
       action: ['clickAt', 'scrollPage', 'scrollBy', 'scrollTo', 'scrollIntoView'],
-      navigation: ['goTo', 'back', 'forward', 'reload', 'closeTab'],
+      navigation: ['goTo', 'back', 'forward', 'reload', 'closeTab', 'getTabs'],
       sensory: ['listen', 'waitForSelector'],
       memory: ['storeFact', 'getFact', 'getAllFacts', 'deleteFact']
     }

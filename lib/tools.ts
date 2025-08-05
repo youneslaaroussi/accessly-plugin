@@ -61,6 +61,12 @@
  */
 
 /**
+ * @tool clickAllSelector
+ * @description Click ALL elements matching a CSS selector
+ * @param selector string
+ */
+
+/**
  * @tool clickAt
  * @description Click at absolute screen coordinate
  * @param x number

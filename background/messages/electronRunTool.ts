@@ -37,7 +37,7 @@ const handler: PlasmoMessaging.MessageHandler = async (req, res) => {
     // List of available tools that can be executed
     const availableTools = [
       'capturePage', 'captureHTML', 'highlight', 'clickAt', 'scrollPage', 'scrollBy', 'scrollTo', 
-      'scrollIntoView', 'goTo', 'back', 'forward', 'reload', 'closeTab', 'listen', 'waitForSelector',
+      'scrollIntoView', 'goTo', 'back', 'forward', 'reload', 'closeTab', 'getTabs', 'listen', 'waitForSelector',
       'storeFact', 'getFact', 'getAllFacts', 'deleteFact'
     ]
     

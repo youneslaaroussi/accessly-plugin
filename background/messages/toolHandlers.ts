@@ -4,12 +4,15 @@ import type { PlasmoMessaging } from "@plasmohq/messaging"
 import back from "./back"
 import captureHTML from "./captureHTML"
 import capturePage from "./capturePage"
+import clickAllSelector from "./clickAllSelector"
 import clickAt from "./clickAt"
+import clickSelector from "./clickSelector"
 import closeTab from "./closeTab"
 import deleteFact from "./deleteFact"
 import forward from "./forward"
 import getAllFacts from "./getAllFacts"
 import getFact from "./getFact"
+import getTabs from "./getTabs"
 import goTo from "./goTo"
 import highlight from "./highlight"
 import listen from "./listen"
@@ -19,18 +22,22 @@ import scrollIntoView from "./scrollIntoView"
 import scrollPage from "./scrollPage"
 import scrollTo from "./scrollTo"
 import storeFact from "./storeFact"
+import type from "./type"
 import waitForSelector from "./waitForSelector"
 
 export const toolHandlers: { [key: string]: PlasmoMessaging.MessageHandler } = {
   back,
   captureHTML,
   capturePage,
+  clickAllSelector,
   clickAt,
+  clickSelector,
   closeTab,
   deleteFact,
   forward,
   getAllFacts,
   getFact,
+  getTabs,
   goTo,
   highlight,
   listen,
@@ -40,6 +47,7 @@ export const toolHandlers: { [key: string]: PlasmoMessaging.MessageHandler } = {
   scrollPage,
   scrollTo,
   storeFact,
+  type,
   waitForSelector
 }
 
